@@ -1,0 +1,19 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: white
+}
+
+.myButton {
+  width: 40vw;
+  height: 4vh;
+  font-size: 2vh;
+  background-color: rgb(114, 215, 255);
+  border: gray solid 1px;
+  border-radius: 2vw;
+}
