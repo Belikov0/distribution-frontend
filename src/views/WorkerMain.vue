@@ -7,12 +7,12 @@ import Layout from '../components/Layout.vue';
     
     <Layout>
         <template v-slot:main>
-            <el-input v-model="input" placeholder="请输入工号以进入操作页面" />
-            <el-button type="primary"><RouterLink to="/worker/operation">登录</RouterLink></el-button>
+            <input class="text-input" type="text" placeholder="请输入工号以进入操作页面" name="username">
+            <RouterLink class="link-button short-button" to="/worker/operation">登录</RouterLink>
         </template>
 
         <template v-slot:footer>
-            <el-button type="primary"><RouterLink to="/admin">切换至管理员界面</RouterLink></el-button>
+            <RouterLink class="link-button" to="/admin">切换至管理员界面</RouterLink>
         </template>
     </Layout>
 

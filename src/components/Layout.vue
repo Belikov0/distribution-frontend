@@ -1,4 +1,6 @@
 <script setup>
+
+
 </script>
 
 
@@ -31,7 +33,7 @@
     #main {
         width: inherit;
         height: 75vh;
-        padding: 15vh 25vw;
+        padding: 15vh 20vw;
 
         display: flex;
         flex-direction: column;

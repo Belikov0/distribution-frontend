@@ -9,11 +9,45 @@ a {
   color: white
 }
 
-.myButton {
+.link-button {
+  color: white;
+  
+  display: block;
+  
+  padding: 1vh 3vw;
   width: 40vw;
   height: 4vh;
+  line-height: 2vh;
   font-size: 2vh;
-  background-color: rgb(114, 215, 255);
-  border: gray solid 1px;
+  background-color: rgb(25, 168, 252);
+  border: rgb(196, 196, 196) solid .2vw;
   border-radius: 2vw;
+  text-align: center;
+}
+
+.short-button {
+  width: auto;
+}
+
+.text-input {
+  width: 60vw;
+  height: 4vh;
+
+  border: rgb(216, 216, 216) solid 0.5vw;
+  border-radius: 1vw;
+  padding: 1vw 3vw;
+  
+  color: rgb(85, 85, 85);
+  font-size: 2vh;
+  line-height: 4vh;
+  /* font-family:; */
+}
+
+.text-input::placeholder {
+  color: rgb(214, 214, 214);
+  font-size: 2vh;
+}
+
+.text-input:active {
+
 }
