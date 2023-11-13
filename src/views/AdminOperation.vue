@@ -18,7 +18,7 @@ const signIn = () =>{
         </template>
 
         <template v-slot:footer>  
-                <RouterLink class="link-button short-button" to="/worker">返回</RouterLink>
+                <RouterLink class="link-button short-button" to="/">退出</RouterLink>
         </template>
     </Layout>
 </template>

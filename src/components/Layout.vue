@@ -27,7 +27,7 @@
         width: inherit;
         height: 10vh;
 
-        background-color: antiquewhite;
+        /* background-color: antiquewhite; */
     }
 
     #main {
@@ -40,7 +40,7 @@
         justify-content: space-evenly;
         align-items: center;
 
-        background-color: aqua;
+        /* background-color: aqua; */
     }
 
     #main el-button {
@@ -57,7 +57,9 @@
         flex-direction: row-reverse;
         align-items: center;
 
-        background-color: aquamarine;
+        /* background-color: aquamarine; */
     }
+
+    
 
 </style>

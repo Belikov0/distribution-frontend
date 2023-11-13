@@ -12,16 +12,23 @@ export const format_list = [
     {
         id: 2,
         router: '',
-        text: '签到状态',
+        text: '今日出勤状态',
     },
     {
         id: 3,
         router: '',
-        text: '本月出勤',
+        text: '历史出勤状态'
     },
     {
         id: 4,
         router: '',
+        text: '查询月表',
+    },
+    {
+        id: 5,
+        router: '',
         text: '本人信息',
     }
 ]
+
+

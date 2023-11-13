@@ -1,0 +1,24 @@
+<template>
+    <div id="float">
+        <slot></slot>
+    </div>
+</template>
+
+<script setup>
+    
+</script>
+
+<style scoped>
+    #float{
+        width: 100vw;
+        height: 100vh;
+        position:absolute;
+        top: 0;
+        left: 0;
+        background-color: rgba(143, 143, 143, 0.5);
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+</style>
