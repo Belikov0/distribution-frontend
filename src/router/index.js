@@ -34,6 +34,16 @@ router.beforeEach((to, from, next) => {
         }
     }
 
+    if (to.path == "/admin"){
+      const adminStore = useAdminStore()
+      if (adminStore.getToken == null){
+        console.log("no token, redirect")
+        next('/')
+      }else{
+        next()
+      }
+    }
+
 })
 
 

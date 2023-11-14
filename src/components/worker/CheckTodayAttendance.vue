@@ -1,9 +1,8 @@
 <template>
     <div class="container">
         
-        <!-- <el-date-picker v-model="year_month_day" type="dates" placeholder="选择您要查询的日期" /> -->
         <div class="table-container">
-
+                
         </div>
         <!-- <button class="link-button" @click="query" >查询</button> -->
         <button class="link-button" @click="workerStore.setAllPanelsFalse">返回</button>

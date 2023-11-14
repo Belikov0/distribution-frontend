@@ -39,7 +39,7 @@ export const useWorkerStore = defineStore("worker", {
     worker: {},
 
     // 组件显示状态
-
+    
     todayAttendancePanel: false,
     historyAttendancePanel: false,
     monthAttendancePanel: false,
@@ -60,6 +60,7 @@ export const useWorkerStore = defineStore("worker", {
     setWorker(worker) {
       this.worker = worker;
     },
+    
     onClickPersonalInfomationButton(){
       this.anyPanelOn = true
       this.informationPanel = true

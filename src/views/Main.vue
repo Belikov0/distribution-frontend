@@ -4,9 +4,11 @@ import { ref } from 'vue'
 import { useWorkerStore } from '../store/workerStore'
 import { useRouter} from 'vue-router';
 import { inject } from 'vue';
+import { useAdminStore } from '../store/adminStore';
 
 const $axios = inject('$axios')
 const workerStore = useWorkerStore()
+const adminStore = useAdminStore()
 const router = useRouter()
 
 
@@ -21,8 +23,7 @@ function login(){
     
     // 不为空，处理
     if (login_to.value == "worker"){
-        const url = "worker/login?worker_id=" + worker_id.value
-
+        const url = "worker/logIn?worker_id=" + worker_id.value
         $axios({
             method: 'get',
             url: url
@@ -35,6 +36,23 @@ function login(){
             }
         })
     }   
+
+    if (login_to.value == "admin"){
+        const url = "admin/logIn?admin_id=" + admin_id.value
+        $axios({
+            method: 'get',
+            url: url
+        })
+        .then(res => {
+            if (res.status == '200'){
+                console.log(res.data)
+                adminStore.setAdmin(res.data)
+                router.push("/admin")
+                return
+            }
+        })
+    }
+
 }
 
 
@@ -64,7 +82,6 @@ function login(){
                 <el-radio label="admin">管理员登录</el-radio>
             </el-radio-group>
 
-            <!-- <RouterLink class="link-button short-button" :to="'/' + login_to">登录</RouterLink> -->
             <button class="link-button short-button" type="button" @click="login">登录</button>
             
         </template>

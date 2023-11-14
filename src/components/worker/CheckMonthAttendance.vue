@@ -42,24 +42,6 @@ const query = () => {
 
 
 <style  scoped>
-.container{
-    width: 100vw;
-    height: 60vh;
-    padding: 3vh 0;
-    background-color: white;
 
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.table-container{
-    height: 30vh;
-    width: 90vw;
-    background-color: bisque;
-    /* border: gray .5vw solid ; */
-    box-shadow: gray 0 0 1vw;
-}
 
 </style>
